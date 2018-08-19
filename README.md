@@ -20,3 +20,17 @@ https://3dscanexpert.com/free-3d-scanning-video-smartphone/
 
 
 # Processing pipelines
+
+
+
+
+
+## Extracting images from video files
+
+use FFmpeg to output each frame individually:
+
+ffmpeg -i /path/to/video.mkv /path/to/output-%04d.jpg
+
+You can also use png instead of jpg for lossless results, and change the number in %04d if you need more digits when the file is longer.
+
+
