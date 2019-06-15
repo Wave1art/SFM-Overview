@@ -38,3 +38,6 @@ ffmpeg -i /path/to/video.mkv /path/to/output-%04d.jpg
 You can also use png instead of jpg for lossless results, and change the number in %04d if you need more digits when the file is longer.
 
 
+## Running the main pipeline
+To start the pipeline call `photogrammetry_pipeline.sh` with the appropriate parameters:
+- -i path to the images directory
